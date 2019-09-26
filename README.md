@@ -21,6 +21,20 @@ The hardware design is intended to be as simple and cheap as possible, therefore
 * [KiCad](http://kicad-pcb.org/) for hardware design.
 * [ELECTRON](https://electronjs.org/) for desktop software development.
 
+## Project Status
+
+### Hardware
+
+The hardware design has been sent for manufacture, this will take somewhere in the region of 20 days to be produced and shipped.
+
+### Firmware
+
+Firmware development is already underway as I already have the CYC8CKIT-059 prototyping board in hand.
+
+### Software
+
+This is being worked on in parallel with the firmware.
+
 ## License
 
 This project is open source and the entire project is released under the [GPLv3 license](https://www.gnu.org/licenses/gpl-3.0.en.html).
