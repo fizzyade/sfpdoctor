@@ -1,0 +1,51 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# 1888247-1
+#
+DEF 1888247-1 J 0 40 Y Y 1 L N
+F0 "J" -300 631 50 H V L BNN
+F1 "1888247-1" -300 -600 50 H V L BNN
+F2 "TE_1888247-1" 0 0 50 H I L BNN
+F3 ".8 mm[.031 in]" 0 0 50 H I L BNN
+F4 "https://www.te.com/usa-en/product-1888247-1.html?te_bu=Cor&te_type=disp&te_campaign=seda_glo_cor-seda-global-disp-prtnr-fy19-seda-model-bom-cta_sma-317_1&elqCampaignId=32493" 0 0 50 H I L BNN
+F5 "A97943CT-ND" 0 0 50 H I L BNN
+F6 "Connector" 0 0 50 H I L BNN
+F7 "TE Connectivity" 0 0 50 H I L BNN
+F8 "1888247-1" 0 0 50 H I L BNN
+F9 "20" 0 0 50 H I L BNN
+F10 "None" 0 0 50 H I L BNN
+F11 "1888247-1" 0 0 50 H I L BNN
+F12 "https://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/1888247-1/A97943CT-ND/1825605?utm_source=snapeda&utm_medium=aggregator&utm_campaign=symbol" 0 0 50 H I L BNN
+F13 "20 Position 0.8 mm Pitch Double Sided Right Angle Receptacle SFP Connector" 0 0 50 H I L BNN
+DRAW
+P 2 0 0 6 300 600 300 -500 N
+P 2 0 0 6 300 -500 -300 -500 N
+P 2 0 0 6 -300 -500 -300 600 N
+P 2 0 0 6 -300 600 300 600 N
+X 1 1 -400 500 100 R 40 40 0 0 P 
+X 2 2 -400 400 100 R 40 40 0 0 P 
+X 3 3 -400 300 100 R 40 40 0 0 P 
+X 4 4 -400 200 100 R 40 40 0 0 P 
+X 5 5 -400 100 100 R 40 40 0 0 P 
+X 6 6 -400 0 100 R 40 40 0 0 P 
+X 7 7 -400 -100 100 R 40 40 0 0 P 
+X 8 8 -400 -200 100 R 40 40 0 0 P 
+X 9 9 -400 -300 100 R 40 40 0 0 P 
+X 10 10 -400 -400 100 R 40 40 0 0 P 
+X 11 11 400 -400 100 L 40 40 0 0 P 
+X 12 12 400 -300 100 L 40 40 0 0 P 
+X 13 13 400 -200 100 L 40 40 0 0 P 
+X 14 14 400 -100 100 L 40 40 0 0 P 
+X 15 15 400 0 100 L 40 40 0 0 P 
+X 16 16 400 100 100 L 40 40 0 0 P 
+X 17 17 400 200 100 L 40 40 0 0 P 
+X 18 18 400 300 100 L 40 40 0 0 P 
+X 19 19 400 400 100 L 40 40 0 0 P 
+X 20 20 400 500 100 L 40 40 0 0 P 
+ENDDRAW
+ENDDEF
+#
+# End Library
