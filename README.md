@@ -14,6 +14,7 @@ The hardware design is intended to be as simple and cheap as possible, therefore
 * **/hardware** - KiCad schematic and PCB layout source files.
 * **/firmware** - The firmware for the [CY8C5888LTI-LP097](https://www.cypress.com/part/cy8c5888lti-lp097) microcontroller on the [Cypress CYC8CKIT-059](https://www.cypress.com/documentation/development-kitsboards/cy8ckit-059-psoc-5lp-prototyping-kit-onboard-programmer-and) prototyping board.
 * **/software** - The desktop software to control the hardware.
+* **/drivers** - Platform dependent drivers for the hardware interface.
 
 ## Required Tools
 
@@ -25,15 +26,16 @@ The hardware design is intended to be as simple and cheap as possible, therefore
 
 ### Hardware
 
-The hardware design has been sent for manufacture, this will take somewhere in the region of 20 days to be produced and shipped.
+* Design: Complete.
+* Manufacture: In progress.
 
 ### Firmware
 
-Firmware development is already underway as I already have the CYC8CKIT-059 prototyping board in hand.
+* Development: Started.
 
 ### Software
 
-This is being worked on in parallel with the firmware.
+* Development: Started.
 
 ## License
 
