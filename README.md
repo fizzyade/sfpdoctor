@@ -26,16 +26,16 @@ The hardware design is intended to be as simple and cheap as possible, therefore
 
 ### Hardware
 
-* Design: Complete.
-* Manufacture: In progress.
+* **Design** - Complete.
+* **Manufacture** - In progress.
 
 ### Firmware
 
-* Development: Started.
+* **Development** - Started.
 
 ### Software
 
-* Development: Started.
+* **Development** - Started.
 
 ## License
 
