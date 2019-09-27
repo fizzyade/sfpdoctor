@@ -30,3 +30,8 @@ Temporary Items
 .apdisk
 
 # End of https://www.gitignore.io/api/macos
+firmware/ComponentUpdateLog.txt
+*.exe
+*.dll
+!driver/**
+
