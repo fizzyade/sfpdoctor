@@ -26,16 +26,20 @@ The hardware design is intended to be as simple and cheap as possible, therefore
 
 ### Hardware
 
-* **Design** - Complete.
-* **Manufacture** - In progress.
+* Design: Complete.
+* Manufacture: In progress.
 
 ### Firmware
 
-* **Development** - Started.
+* Development: Started.
 
 ### Software
 
-* **Development** - Started.
+* Development: Started.
+
+## With Thanks
+
+This project is using a USB VID & PID kindly allocated by [pid.codes](http://pid.codes).  Their repository can be found [here](https://github.com/pidcodes/pidcodes.github.com).  They support open source development by providing VID/PID pairs for free.
 
 ## License
 
