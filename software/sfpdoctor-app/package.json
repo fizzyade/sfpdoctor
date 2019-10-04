@@ -1,0 +1,22 @@
+{
+  "name": "proton-template-app",
+  "version": "1.0.0",
+  "description": "A simple template app for Proton",
+  "main": "app.ts",
+  "author": "Connor Sears",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "lint": "tslint -c tslint.json -p tsconfig.json",
+    "start": "npm run build && electron ./dist/app.js"
+  },
+  "devDependencies": {
+    "electron": "^6.0.10",
+    "electron-rebuild": "^1.8.6"
+  },
+  "dependencies": {
+    "@types/usb": "^1.5.1",
+    "typescript": "^3.6.3",
+    "usb": "^1.6.0"
+  }
+}
