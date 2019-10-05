@@ -1,7 +1,8 @@
 /*
  * Copyright (C) 2019 Adrian Carpenter
  *
- * This file is part of SFP Doctor a hardware & software project for reading/writing SFP modules.
+ * This file is part of SFP Doctor (https://github.com/fizzyade/sfpdoctor) 
+ * a hardware & software project for reading/writing SFP/SFP+ modules.
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -17,18 +18,18 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-import { IObject } from "./IObject";
+import { IObject } from "interfaces/IObject";
 
 export abstract class IDevice extends IObject {
     id_b3b3139993494cdb8148f00d8880df3f():string {
-        return("id_b3b3139993494cdb8148f00d8880df3f");
+        return("IDevice");
+    }
+
+    static hasInterface(arg: any) {
+        let obj:IDevice = arg as IDevice;
+
+        return (obj.id_b3b3139993494cdb8148f00d8880df3f !== undefined); 
     }
 
     abstract test(): boolean;
-}
-
-export function isIDevice(arg: any) {
-    let obj:IDevice = arg as IDevice;
-
-    return (obj.id_b3b3139993494cdb8148f00d8880df3f !== undefined);
 }

@@ -1,25 +1,22 @@
-/*******************************************************************************
-* File Name: main.c
-*
-* Version: 3.0
-*
-* Description:
-*  This example project demonstrates how to establish communication between 
-*  the PC and Vendor-Specific USB device. The device has two endpoints: 
-*  BULK IN and BULK OUT. The OUT endpoint allows the host to write data into 
-*  the device and the IN endpoint allows the host to read data from the device. 
-*  The data received in the OUT endpoint is looped back to the IN endpoint.
-*
-********************************************************************************
-* Copyright 2015, Cypress Semiconductor Corporation. All rights reserved.
-* This software is owned by Cypress Semiconductor Corporation and is protected
-* by and subject to worldwide patent and copyright laws and treaties.
-* Therefore, you may use this software only as provided in the license agreement
-* accompanying the software package from which you obtained this software.
-* CYPRESS AND ITS SUPPLIERS MAKE NO WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
-* WITH REGARD TO THIS SOFTWARE, INCLUDING, BUT NOT LIMITED TO, NONINFRINGEMENT,
-* IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
-*******************************************************************************/
+/*
+ * Copyright (C) 2019 Adrian Carpenter
+ *
+ * This file is part of SFP Doctor (https://github.com/fizzyade/sfpdoctor) 
+ * a hardware & software project for reading/writing SFP/SFP+ modules.
+ * 
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * 
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
 
 #include <project.h>
 
@@ -56,25 +53,10 @@
 #endif /* (USBFS_GEN_16BITS_EP_ACCESS) */
 
 
-/*******************************************************************************
-* Function Name: main
-********************************************************************************
-*
-* Summary:
-*  The main function performs the following actions:
-*   1. Starts the USBFS component.
-*   2. Waits until the device is enumerated by the host.
-*   3. Enables the OUT endpoint to start communication with the host.
-*   4. Waits for OUT data coming from the host and sends it back on a
-*      subsequent IN request.
-*
-* Parameters:
-*  None.
-*
-* Return:
-*  None.
-*
-*******************************************************************************/
+/*
+ *
+ */
+
 int main()
 {
     uint16 length;

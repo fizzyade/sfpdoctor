@@ -1,14 +1,14 @@
 {
-  "name": "proton-template-app",
+  "name": "sfpdoctor",
   "version": "1.0.0",
-  "description": "A simple template app for Proton",
+  "description": "A program for reading and writing the EEPROM on SFP/SFP+ modules.",
   "main": "app.ts",
-  "author": "Connor Sears",
+  "author": "Adrian Carpenter",
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",
     "lint": "tslint -c tslint.json -p tsconfig.json",
-    "start": "npm run build && electron ./dist/app.js"
+    "start": "npm run build && cd build/dist && electron ./app.js"
   },
   "devDependencies": {
     "electron": "^6.0.10",

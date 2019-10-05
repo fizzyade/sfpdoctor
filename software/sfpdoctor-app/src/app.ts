@@ -1,7 +1,8 @@
 /*
  * Copyright (C) 2019 Adrian Carpenter
  *
- * This file is part of SFP Doctor a hardware & software project for reading/writing SFP modules.
+ * This file is part of SFP Doctor (https://github.com/fizzyade/sfpdoctor) 
+ * a hardware & software project for reading/writing SFP/SFP+ modules.
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -17,11 +18,17 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+const util = require('util');
+const debuglog = util.debuglog('foo');
+
+debuglog('hello from foo [%d]', 123);
+
 import { app, BrowserWindow } from "electron";
 import * as Usb from "usb" ;
-import { IDevice, isIDevice } from "./interfaces/IDevice";
-import { IObject, isIObject } from "./interfaces/IObject";
-import { IDeviceFactory, isIDeviceFactory } from "./interfaces/IDeviceFactory";
+import { IDevice } from "interfaces/IDevice";
+import { IObject } from "interfaces/IObject";
+import { IDeviceFactory } from "interfaces/IDeviceFactory";
+import { SFPDoctorAlphaDeviceFactory } from "./SFPDoctorAlphaDeviceFactory";
 
 // npm install electron --save-dev
 // npm install --save-dev electron-rebuild
@@ -30,6 +37,8 @@ import { IDeviceFactory, isIDeviceFactory } from "./interfaces/IDeviceFactory";
 // npm i @types/usb
 // .\node_modules\.bin\electron-rebuild.cmd
 // npm start
+//
+// cert needs to be installed as a root ca and as a trusted publisher.
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
@@ -51,11 +60,11 @@ class fred extends IDevice {
         return true;
     }
 }
-
+/*
 class bob extends IDeviceFactory {
 
 }
-
+*/
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
 app.on('ready', function () {
@@ -71,8 +80,12 @@ app.on('ready', function () {
 
     mainWindow.loadURL('file://' + __dirname + '/../index.html');
     
-    let usbDevice:Usb.Device;
+    let f:SFPDoctorAlphaDeviceFactory = new SFPDoctorAlphaDeviceFactory();
 
+    f.open();
+
+    /*let usbDevice:Usb.Device;
+  
     usbDevice = Usb.findByIds(0x4B4, 0x8052);
 
     if (usbDevice != null) {
@@ -134,28 +147,28 @@ app.on('ready', function () {
                 }
             }
         }
-    }
+    }*/
 
     //let MyFred:fred;
 
     let MyFred = new fred();
-    let MyBob = new bob();
+   // let MyBob = new bob();
 
-    if (isIDevice(MyFred)) {
+    if (IDevice.hasInterface(MyFred)) {
         console.log("fred is IDevice");
     }
 
-    if (isIObject(MyFred)) {
+    if (IObject.hasInterface(MyFred)) {
         console.log("fred is IObject");
     }
 
-    if (isIDeviceFactory(MyBob)) {
+    /*if (IDeviceFactory.hasInterface(MyBob)) {
         console.log("bob is IDeviceFactory");
     }
     
-    if (isIDevice(MyBob)) {
+    if (IDevice.hasInterface(MyBob)) {
         console.log("bob is IDevice");
-    }
+    }*/
 
     // Open the DevTools.
     //mainWindow.openDevTools();
