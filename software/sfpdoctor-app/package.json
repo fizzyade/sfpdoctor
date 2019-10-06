@@ -1,5 +1,7 @@
 {
-  "main": "src/app.ts",
+  "main": "./dist/src/app.js",
+  "name": "sfpdoctor",
+  "version": "1.0.0",
   "license": "GPL-3.0-or-later",
   "devDependencies": {
     "@types/usb": "^1.5.1",
@@ -8,6 +10,7 @@
     "electron": "^6.0.11",
     "electron-builder": "^21.2.0",
     "electron-is-dev": "^1.1.0",
+    "electron-packager": "^14.0.6",
     "electron-rebuild": "^1.8.6",
     "typescript": "^3.6.3",
     "wait-on": "^3.3.0"
@@ -16,12 +19,17 @@
     "appId": "com.fizzyade.sfpdoctor",
     "mac": {
       "category": "your.app.category.type"
+    },
+    "win": {
+      "target": "portable"
     }
   },
   "scripts": {
-    "electron-dev": "concurrently \"yarn start\" \"wait-on http://localhost:3000 && electron .\"",
+    "electron-dev": "electron ./dist/src/app.js",
     "pack": "electron-builder --dir",
     "dist": "electron-builder",
+    "b":"build --em.main=build/app.js",
+    "build-win32": "electron-packager . --asar --platform=win32 --arch=x64 --overwrite --executableName SFPDoctor",
     "postinstall": "electron-builder install-app-deps",
     "build": "tsc",
     "start": "electron ./dist/src/app.js",

@@ -30,9 +30,6 @@ import { SFPDoctorAlphaDeviceFactory } from "./SFPDoctorAlphaDeviceFactory";
 
 // cert needs to be installed as a root ca and as a trusted publisher.
 
-// Keep a global reference of the window object, if you don't, the window will
-// be closed automatically when the JavaScript object is garbage collected.
-
 let mainWindow:Electron.BrowserWindow;
 
 // Quit when all windows are closed.
@@ -44,18 +41,6 @@ app.on('window-all-closed', function () {
     }
 });
 
-class fred extends IDevice {
-    test():boolean {
-        return true;
-    }
-}
-/*
-class bob extends IDeviceFactory {
-
-}
-*/
-// This method will be called when Electron has finished
-// initialization and is ready to create browser windows.
 app.on('ready', function () {
     // Create the browser window.
     mainWindow = new BrowserWindow({
@@ -70,97 +55,6 @@ app.on('ready', function () {
     console.log("dir "+__dirname);
 
     mainWindow.loadURL('file://' + __dirname + '/index.html');
-    //mainWindow.loadURL('file://index.html');
-    
-    let f:SFPDoctorAlphaDeviceFactory = new SFPDoctorAlphaDeviceFactory();
-
-    f.open();
-
-    /*let usbDevice:Usb.Device;
-  
-    usbDevice = Usb.findByIds(0x4B4, 0x8052);
-
-    if (usbDevice != null) {
-        usbDevice.open();
-
-        let deviceInterface: Usb.Interface;
-
-        deviceInterface = usbDevice.interface(0);
-
-        if (deviceInterface != undefined) {
-            deviceInterface.claim();
-    
-            if (deviceInterface.endpoints.length==2) {
-                let epIn: Usb.InEndpoint;
-                let epOut: Usb.OutEndpoint;
-
-                epIn = null;
-                epOut = null;
-
-                // locate in end out endpoints
-
-                if (deviceInterface.endpoints[0].direction=='in')
-                    epIn = deviceInterface.endpoints[0] as Usb.InEndpoint;
-                else
-                    epOut = deviceInterface.endpoints[0] as Usb.OutEndpoint;
-        
-                if (deviceInterface.endpoints[1].direction=='out')
-                    epOut = deviceInterface.endpoints[1] as Usb.OutEndpoint
-                else
-                    epIn = deviceInterface.endpoints[1] as Usb.InEndpoint
-
-                if ((epIn) && (epOut)) {
-                    epIn.on("data", function (dataBuf) {
-                        let dataArr = Array.prototype.slice.call(new Uint8Array(dataBuf, 0, dataBuf.length));
-                        console.log("read:" + dataArr);
-                    });
-            
-                    epIn.transferType = Usb.LIBUSB_TRANSFER_TYPE_BULK;
-            
-                    epIn.startPoll(1, 64);
-            
-                    console.log("writing...");
-            
-                    const buf = Buffer.from([1, 2, 3, 4, 5]);// 5, 6, 7, 8]);
-            
-                    epOut.transferType = Usb.LIBUSB_TRANSFER_TYPE_BULK;
-            
-                    epOut.transfer(buf, (error: Usb.LibUSBException) => {
-                        if (error != undefined)
-                            console.log("error sending!");
-                    });
-
-                    epOut.transfer(buf, (error: Usb.LibUSBException) => {
-                        if (error != undefined)
-                            console.log("error sending!");
-                    });
-            
-                    console.log("ep 1 is " + epOut.direction);
-                }
-            }
-        }
-    }*/
-
-    //let MyFred:fred;
-
-    let MyFred = new fred();
-   // let MyBob = new bob();
-
-    if (IDevice.hasInterface(MyFred)) {
-        console.log("fred is IDevice");
-    }
-
-    if (IObject.hasInterface(MyFred)) {
-        console.log("fred is IObject");
-    }
-
-    /*if (IDeviceFactory.hasInterface(MyBob)) {
-        console.log("bob is IDeviceFactory");
-    }
-    
-    if (IDevice.hasInterface(MyBob)) {
-        console.log("bob is IDevice");
-    }*/
 
     // Open the DevTools.
     //mainWindow.openDevTools();
