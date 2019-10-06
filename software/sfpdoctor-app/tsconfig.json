@@ -3,15 +3,15 @@
       "module": "commonjs",
       "noImplicitAny": true,
       "sourceMap": true,
-      "outDir": "build/dist",
-      "baseUrl": "src",
-      "rootDir": "src"
+      "outDir": "./dist",
+      "baseUrl": "./",
+      "rootDir": "./"
     },
 	"include": [
-		"src/**/*"
+		"./src/**/*"
     ],
     "exclude": [
-		"./src/types",
-		"node_modules"
+		"./dist/types",
+		"./node_modules"
 	]
 }

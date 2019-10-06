@@ -18,17 +18,17 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-import { IObject } from "interfaces/IObject";
+import { IObject } from "./IObject";
 
 export abstract class IDevice extends IObject {
-    id_b3b3139993494cdb8148f00d8880df3f():string {
+    type_IDevice():string {
         return("IDevice");
     }
 
     static hasInterface(arg: any) {
         let obj:IDevice = arg as IDevice;
 
-        return (obj.id_b3b3139993494cdb8148f00d8880df3f !== undefined); 
+        return (obj.type_IDevice !== undefined); 
     }
 
     abstract test(): boolean;

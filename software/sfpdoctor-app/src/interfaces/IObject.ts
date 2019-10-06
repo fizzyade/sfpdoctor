@@ -19,13 +19,13 @@
  */
 
 export abstract class IObject {
-    id_9484489f26864d0fb1b8bd51e63f3bbd():string {
+    type_IObject():string {
         return("IObject");
     }  
 
     static hasInterface(arg: any) {
         let obj:IObject = arg as IObject;
     
-        return (arg.id_9484489f26864d0fb1b8bd51e63f3bbd !== undefined);
+        return (arg.type_IObject !== undefined);
     }
 }

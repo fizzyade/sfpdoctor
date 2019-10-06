@@ -18,31 +18,20 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-const util = require('util');
-const debuglog = util.debuglog('foo');
-
-debuglog('hello from foo [%d]', 123);
-
 import { app, BrowserWindow } from "electron";
 import * as Usb from "usb" ;
-import { IDevice } from "interfaces/IDevice";
-import { IObject } from "interfaces/IObject";
-import { IDeviceFactory } from "interfaces/IDeviceFactory";
+import { IDevice } from "./interfaces/IDevice";
+import { IObject } from "./interfaces/IObject";
+import { IDeviceFactory } from "./interfaces/IDeviceFactory";
 import { SFPDoctorAlphaDeviceFactory } from "./SFPDoctorAlphaDeviceFactory";
 
-// npm install electron --save-dev
-// npm install --save-dev electron-rebuild
-// npm install usb
-// npm install typescript
-// npm i @types/usb
-// .\node_modules\.bin\electron-rebuild.cmd
-// npm start
-//
+// yarn reemove usb
+// yarn add usb --force
+
 // cert needs to be installed as a root ca and as a trusted publisher.
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
-//var mainWindow = null;
 
 let mainWindow:Electron.BrowserWindow;
 
@@ -78,7 +67,10 @@ app.on('ready', function () {
         titleBarStyle:"hidden"
     });
 
-    mainWindow.loadURL('file://' + __dirname + '/../index.html');
+    console.log("dir "+__dirname);
+
+    mainWindow.loadURL('file://' + __dirname + '/index.html');
+    //mainWindow.loadURL('file://index.html');
     
     let f:SFPDoctorAlphaDeviceFactory = new SFPDoctorAlphaDeviceFactory();
 

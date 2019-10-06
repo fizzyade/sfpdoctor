@@ -18,7 +18,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-import { IDeviceFactory } from "interfaces/IDeviceFactory"
+import { IDeviceFactory } from "./interfaces/IDeviceFactory"
 import * as Usb from "usb" ;
 
 export class SFPDoctorAlphaDeviceFactory {

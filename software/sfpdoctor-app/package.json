@@ -1,22 +1,33 @@
 {
-  "name": "sfpdoctor",
-  "version": "1.0.0",
-  "description": "A program for reading and writing the EEPROM on SFP/SFP+ modules.",
-  "main": "app.ts",
-  "author": "Adrian Carpenter",
-  "scripts": {
-    "build": "tsc",
-    "watch": "tsc -w",
-    "lint": "tslint -c tslint.json -p tsconfig.json",
-    "start": "npm run build && cd build/dist && electron ./app.js"
-  },
+  "main": "src/app.ts",
+  "license": "GPL-3.0-or-later",
   "devDependencies": {
-    "electron": "^6.0.10",
-    "electron-rebuild": "^1.8.6"
+    "@types/usb": "^1.5.1",
+    "concurrently": "^4.1.2",
+    "copyfiles": "^2.1.1",
+    "electron": "^6.0.11",
+    "electron-builder": "^21.2.0",
+    "electron-is-dev": "^1.1.0",
+    "electron-rebuild": "^1.8.6",
+    "typescript": "^3.6.3",
+    "wait-on": "^3.3.0"
+  },
+  "build": {
+    "appId": "com.fizzyade.sfpdoctor",
+    "mac": {
+      "category": "your.app.category.type"
+    }
+  },
+  "scripts": {
+    "electron-dev": "concurrently \"yarn start\" \"wait-on http://localhost:3000 && electron .\"",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "postinstall": "electron-builder install-app-deps",
+    "build": "tsc",
+    "start": "electron ./dist/src/app.js",
+    "copy-assets": "copyfiles -u 2 ./src/gui/**/* ./dist/src"
   },
   "dependencies": {
-    "@types/usb": "^1.5.1",
-    "typescript": "^3.6.3",
     "usb": "^1.6.0"
   }
 }
