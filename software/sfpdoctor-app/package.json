@@ -1,8 +1,19 @@
 {
-  "main": "./dist/src/app.js",
+  "main": "./out/app.js",
   "name": "sfpdoctor",
   "version": "1.0.0",
   "license": "GPL-3.0-or-later",
+  "description": "SFP Doctor desktop app",
+  "author": {
+    "name": "Adrian Carpenter",
+    "email": "adrian@fizzyade.com",
+    "url": "https://www.fizzyade.com"
+  },
+  "homepage": "https://www.sfpdoctor.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fizzyade/sfpdoctor.git"
+  },
   "devDependencies": {
     "@types/usb": "^1.5.1",
     "concurrently": "^4.1.2",
@@ -17,6 +28,9 @@
   },
   "build": {
     "appId": "com.fizzyade.sfpdoctor",
+    "files": [
+        "out"
+    ],
     "mac": {
       "category": "your.app.category.type"
     },
@@ -25,17 +39,17 @@
     }
   },
   "scripts": {
-    "electron-dev": "electron ./dist/src/app.js",
+    "debug": "yarn run copy-assets && yarn run build && yarn run start", 
+    "clean": "rimraf ./out",
     "pack": "electron-builder --dir",
     "dist": "electron-builder",
-    "b":"build --em.main=build/app.js",
-    "build-win32": "electron-packager . --asar --platform=win32 --arch=x64 --overwrite --executableName SFPDoctor",
     "postinstall": "electron-builder install-app-deps",
     "build": "tsc",
-    "start": "electron ./dist/src/app.js",
-    "copy-assets": "copyfiles -u 2 ./src/gui/**/* ./dist/src"
+    "start": "electron ./out/app.js",
+    "copy-assets": "copyfiles -u 2 ./src/gui/**/* ./out"
   },
   "dependencies": {
     "usb": "^1.6.0"
   }
 }
+ 
