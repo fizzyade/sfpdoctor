@@ -1,3 +1,8 @@
+[uri_license]: https://www.gnu.org/licenses/gpl-3.0.en.html
+[uri_license_image]: https://img.shields.io/badge/License-GPLv3-blue.svg
+
+[![License: GPLv3][uri_license_image]][uri_license]
+
 # SFP Doctor
 SFP Doctor is an open source hardware &amp; software project for reading and writing the EEPROM inside SFP &amp; SFP+ modules.
 
@@ -11,31 +16,53 @@ The hardware design is intended to be as simple and cheap as possible, therefore
 
 ## Repository Contents
 
-* **/hardware** - KiCad schematic and PCB layout source files.
+* **/hardware** - [KiCad](http://kicad-pcb.org/) schematic and PCB layout source files.
 * **/firmware** - The firmware for the [CY8C5888LTI-LP097](https://www.cypress.com/part/cy8c5888lti-lp097) microcontroller on the [Cypress CYC8CKIT-059](https://www.cypress.com/documentation/development-kitsboards/cy8ckit-059-psoc-5lp-prototyping-kit-onboard-programmer-and) prototyping board.
 * **/software** - The desktop software to control the hardware.
 * **/drivers** - Platform dependent drivers for the hardware interface.
 
 ## Required Tools
 
-* [Cypress PSoC Creator](https://www.cypress.com/products/psoc-creator-integrated-design-environment-ide) for firmware development.
-* [KiCad](http://kicad-pcb.org/) for hardware design.
-* [ELECTRON](https://electronjs.org/) for desktop software development.
+* **[Cypress PSoC Creator](https://www.cypress.com/products/psoc-creator-integrated-design-environment-ide)** for firmware development.
+* **[KiCad](http://kicad-pcb.org/)** for hardware design.
+* **[Node.js](https://nodejs.org/)** for desktop software.
+* **[Yarn](https://yarnpkg.com/)** for desktop software.
+* **[ELECTRON](https://electronjs.org/)** for desktop software development.
+
+## Building Software
+
+### Desktop
+
+After installing the prequestite packages, use the following commands.
+
+    yarn run build
+    yarn run start
+
+The platform binary can be created with the following commands.
+
+    yarn run build
+    yarn run dist
+
+(*Please note that currently the software is not functional*)
+
+### Firmware
+
+Open the firmware project in PSOC Creator and select build to create the firmware image.
 
 ## Project Status
 
 ### Hardware
 
-* Design: Complete.
-* Manufacture: In progress.
+* **Design:** Complete.
+* **Manufacture:** In progress.
 
 ### Firmware
 
-* Development: Started.
+* **Development:** Started.
 
 ### Software
 
-* Development: Started.
+* **Development:** Started.
 
 ## With Thanks
 
