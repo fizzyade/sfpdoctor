@@ -55,6 +55,7 @@ Open the firmware project in PSOC Creator and select build to create the firmwar
 
 * **Design:** Complete.
 * **Manufacture:** In progress.
+  * 06-Nov-2019 - PCB's arrived, build & test commenced.
 
 ### Firmware
 
