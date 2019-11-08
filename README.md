@@ -59,7 +59,7 @@ Open the firmware project in PSOC Creator and select build to create the firmwar
 * **Manufacture:** In progress.
     * _**07 Nov 2019**_ - Board Assembled, ready for test.
 
-![Bare Board](../assets/bare_board.png?raw=true)![Complete Board](../assets/complete_board.png?raw=true)
+![Bare Board](../assets/photos/bare_board.png?raw=true)![Complete Board](../assets/photos/complete_board.png?raw=true)
 
 ### Firmware
 
