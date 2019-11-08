@@ -1,3 +1,5 @@
+![Logo](../assets/icon_76pt.png?raw=true)
+
 [uri_license]: https://www.gnu.org/licenses/gpl-3.0.en.html
 [uri_license_image]: https://img.shields.io/badge/License-GPLv3-blue.svg
 
