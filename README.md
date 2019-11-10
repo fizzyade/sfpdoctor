@@ -58,8 +58,11 @@ Open the firmware project in PSOC Creator and select build to create the firmwar
 * **Design:** Complete.
 * **Manufacture:** In progress.
     * _**07 Nov 2019**_ - Board Assembled, ready for test.
+    * _**10 Nov 2019**_ - Board tested and working.
 
 ![Bare Board](../assets/photos/bare_board.png?raw=true)![Complete Board](../assets/photos/complete_board.png?raw=true)
+
+(_please **NOTE:** in this picture the CY8CKIT-059 module is installed the wrong way around, picture to be updated soon.)_
 
 ### Firmware
 
