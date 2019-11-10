@@ -1418,4 +1418,110 @@ B0 47 02 8C 90 9C 42 AF 43 41 24 09 2E 39 50 E3 21 81 14 2C 12 1F 1F 0D 4D 5E 9F
 03 03 06 58 6F B7 66 7A BB 00 00 00 00 49 45 4E 44 AE 42 60 82 
 EndData
 $EndBitmap
+Text Notes 8550 4500 0    50   ~ 0
+VDD
+Text Notes 8550 4400 0    50   ~ 0
+GND
+Text Notes 8550 4200 0    50   ~ 0
+P0_7
+Text Notes 8550 4100 0    50   ~ 0
+P0_6
+Text Notes 8550 4000 0    50   ~ 0
+P0_5
+Text Notes 8550 3900 0    50   ~ 0
+P0_4
+Text Notes 8550 3800 0    50   ~ 0
+P0_3
+Text Notes 8550 3700 0    50   ~ 0
+P0_2
+Text Notes 8550 3600 0    50   ~ 0
+P0_1
+Text Notes 8550 3500 0    50   ~ 0
+P0_0
+Text Notes 8550 3400 0    50   ~ 0
+P15_5
+Text Notes 8550 3300 0    50   ~ 0
+P15_4
+Text Notes 8550 3200 0    50   ~ 0
+P15_3
+Text Notes 8550 3100 0    50   ~ 0
+P15_2
+Text Notes 8550 3000 0    50   ~ 0
+P15_1
+Text Notes 8550 2900 0    50   ~ 0
+P15_0
+Text Notes 8550 2800 0    50   ~ 0
+P3_7
+Text Notes 8550 2700 0    50   ~ 0
+P3_6
+Text Notes 8550 2600 0    50   ~ 0
+P3_5
+Text Notes 8550 2500 0    50   ~ 0
+P3_4
+Text Notes 8550 2400 0    50   ~ 0
+P3_3
+Text Notes 8550 2300 0    50   ~ 0
+P3_2
+Text Notes 8550 2200 0    50   ~ 0
+P3_1
+Text Notes 8550 2100 0    50   ~ 0
+P3_0
+Text Notes 8550 2000 0    50   ~ 0
+GND
+Text Notes 8550 4300 0    50   ~ 0
+RESET
+Text Notes 9350 2000 2    50   ~ 0
+VDDIO
+Text Notes 9350 2100 2    50   ~ 0
+GND
+Text Notes 9350 2200 2    50   ~ 0
+P1_7
+Text Notes 9300 2300 2    50   ~ 0
+P1_6
+Text Notes 9350 2400 2    50   ~ 0
+P1_5
+Text Notes 9350 2500 2    50   ~ 0
+P1_4
+Text Notes 9350 2600 2    50   ~ 0
+P1_3
+Text Notes 9350 2700 2    50   ~ 0
+P1_2
+Text Notes 9350 2800 2    50   ~ 0
+P1_1
+Text Notes 9350 2900 2    50   ~ 0
+P1_0
+Text Notes 9350 3000 2    50   ~ 0
+P12_0
+Text Notes 9350 3100 2    50   ~ 0
+P12_1
+Text Notes 9350 3200 2    50   ~ 0
+P12_2
+Text Notes 9350 3300 2    50   ~ 0
+P12_3
+Text Notes 9350 3400 2    50   ~ 0
+P12_4
+Text Notes 9350 3500 2    50   ~ 0
+P12_5
+Text Notes 9350 3600 2    50   ~ 0
+P12_6
+Text Notes 9350 3700 2    50   ~ 0
+P12_7
+Text Notes 9350 3800 2    50   ~ 0
+P2_7
+Text Notes 9350 3900 2    50   ~ 0
+P2_6
+Text Notes 9350 4000 2    50   ~ 0
+P2_5
+Text Notes 9350 4100 2    50   ~ 0
+P2_4
+Text Notes 9350 4200 2    50   ~ 0
+P2_3
+Text Notes 9350 4300 2    50   ~ 0
+P2_2
+Text Notes 9350 4400 2    50   ~ 0
+P2_1
+Text Notes 9350 4500 2    50   ~ 0
+P2_0
+Text Notes 9150 4400 2    50   Italic 0
+(LED1)
 $EndSCHEMATC
