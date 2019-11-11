@@ -23,6 +23,8 @@ The hardware design is intended to be as simple and cheap as possible, therefore
 * **/software** - The desktop software to control the hardware.
 * **/drivers** - Platform dependent drivers for the hardware interface.
 
+Development takes place in the develop branch, master is currently a placeholder and not up to date.
+
 ## Required Tools
 
 * **[Cypress PSoC Creator](https://www.cypress.com/products/psoc-creator-integrated-design-environment-ide)** for firmware development.
@@ -56,13 +58,17 @@ Open the firmware project in PSOC Creator and select build to create the firmwar
 ### Hardware
 
 * **Design:** Complete.
-* **Manufacture:** In progress.
+* **Manufacture:** Complete.
     * _**07 Nov 2019**_ - Board Assembled, ready for test.
     * _**10 Nov 2019**_ - Board tested and working.
 
 ![Bare Board](../assets/photos/bare_board.png?raw=true)![Complete Board](../assets/photos/complete_board.png?raw=true)
 
 (_please **NOTE:** in this picture the CY8CKIT-059 module is installed the wrong way around, picture to be updated soon.)_
+
+![Render Rev. 1.2](../assets/render_rev_1_2.png?raw=true)
+
+(_Render of Rev. 1.2 board_)
 
 ### Firmware
 
