@@ -2,4 +2,5 @@
   (lib (name Logo)(type KiCad)(uri ${KIPRJMOD}/Libs/Logo)(options "")(descr ""))
   (lib (name Footprint)(type KiCad)(uri ${KIPRJMOD}/Libs/Footprint)(options "")(descr ""))
   (lib (name 3D)(type KiCad)(uri ${KIPRJMOD}/Libs/3D)(options "")(descr ""))
+  (lib (name 2227023-1)(type Legacy)(uri ${KIPRJMOD}/Libs/Footprint/2227023-1/2227023-1.mod)(options "")(descr ""))
 )
