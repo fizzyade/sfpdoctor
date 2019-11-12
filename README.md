@@ -66,7 +66,7 @@ Open the firmware project in PSOC Creator and select build to create the firmwar
 
 (_please **NOTE:** in this picture the CY8CKIT-059 module is installed the wrong way around, picture to be updated soon.)_
 
-![Render Rev. 1.2](../assets/render_rev_1_2.png?raw=true)
+![Render Rev. 1.2](../assets/render_rev_1_3.png?raw=true)
 
 (_Render of Rev. 1.2 board_)
 
