@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:SFP Doctor-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -6,7 +7,7 @@ encoding utf-8
 Sheet 1 1
 Title "SFP Doctor"
 Date "2019-11-11"
-Rev "1.2"
+Rev "1.3"
 Comp "fizzyade.com"
 Comment1 ""
 Comment2 ""
@@ -126,12 +127,6 @@ Wire Wire Line
 	9850 2050 9850 1500
 Wire Wire Line
 	9250 2050 9850 2050
-Text GLabel 7800 3450 0    50   BiDi ~ 0
-SDA_5V
-Wire Wire Line
-	7800 3450 7950 3450
-Wire Wire Line
-	7800 3550 7950 3550
 $Comp
 L power:GND #PWR0108
 U 1 1 5D90E2D2
@@ -151,8 +146,6 @@ Text GLabel 2750 2900 0    50   BiDi ~ 0
 SDA_3V3
 Text GLabel 2750 3000 0    50   Input ~ 0
 SCL_3V3
-Text GLabel 7800 3550 0    50   Output ~ 0
-SCL_5V
 Wire Wire Line
 	2850 3500 2300 3500
 Connection ~ 2300 3500
@@ -182,9 +175,6 @@ NoConn ~ 9250 3650
 NoConn ~ 9250 3550
 NoConn ~ 9250 3450
 NoConn ~ 9250 3350
-NoConn ~ 9250 3250
-NoConn ~ 9250 3150
-NoConn ~ 9250 3050
 NoConn ~ 9250 2950
 NoConn ~ 9250 2850
 NoConn ~ 9250 2750
@@ -1544,15 +1534,26 @@ Wire Notes Line
 	4900 7350 6800 7350
 NoConn ~ 5950 6650
 NoConn ~ 6050 6650
-Text GLabel 7800 4150 0    50   Output ~ 0
+Text GLabel 9350 3150 2    50   Output ~ 0
 LED_CLOCK
-Text GLabel 7800 4250 0    50   Output ~ 0
+Text GLabel 9350 3050 2    50   Output ~ 0
 LED_DATA
-Wire Wire Line
-	7800 4150 7950 4150
-Wire Wire Line
-	7950 4250 7800 4250
 NoConn ~ 7950 3750
 NoConn ~ 7950 3650
 NoConn ~ 7950 4350
+Text GLabel 7800 3550 0    50   Output ~ 0
+SCL_5V
+Wire Wire Line
+	7800 3550 7950 3550
+Wire Wire Line
+	7800 3450 7950 3450
+Text GLabel 7800 3450 0    50   BiDi ~ 0
+SDA_5V
+Wire Wire Line
+	9250 3050 9350 3050
+Wire Wire Line
+	9250 3150 9350 3150
+NoConn ~ 7950 4150
+NoConn ~ 7950 4250
+NoConn ~ 9250 3250
 $EndSCHEMATC
