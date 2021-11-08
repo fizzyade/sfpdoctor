@@ -18,7 +18,7 @@ The hardware design is intended to be as simple and cheap as possible, therefore
 
 ## Repository Contents
 
-* **/hardware** - [KiCad](http://kicad-pcb.org/) schematic and PCB layout source files.
+* **/hardware** - [KiCad](https://kicad.org/) schematic and PCB layout source files.
 * **/firmware** - The firmware for the [CY8C5888LTI-LP097](https://www.cypress.com/part/cy8c5888lti-lp097) microcontroller on the [Cypress CYC8CKIT-059](https://www.cypress.com/documentation/development-kitsboards/cy8ckit-059-psoc-5lp-prototyping-kit-onboard-programmer-and) prototyping board.
 * **/software** - The desktop software to control the hardware.
 * **/drivers** - Platform dependent drivers for the hardware interface.
@@ -28,7 +28,7 @@ Development takes place in the develop branch, master is currently a placeholder
 ## Required Tools
 
 * **[Cypress PSoC Creator](https://www.cypress.com/products/psoc-creator-integrated-design-environment-ide)** for firmware development.
-* **[KiCad](http://kicad-pcb.org/)** for hardware design.
+* **[KiCad](https://kicad.org/)** for hardware design.
 * **[Node.js](https://nodejs.org/)** for desktop software.
 * **[Yarn](https://yarnpkg.com/)** for desktop software.
 * **[ELECTRON](https://electronjs.org/)** for desktop software development.
